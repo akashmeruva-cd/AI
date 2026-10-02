@@ -8,7 +8,7 @@ Welcome to the **Retrieval-Augmented Generation (RAG) Practical Lab**. This repo
 
 ### 1. Open Directory & Install Dependencies
 ```bash
-cd AI
+cd AI/RAG
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -59,12 +59,18 @@ Once indexed in ChromaDB, students can run questions like:
 
 ```
 AI/
-├── RAG_HandsOn_Lab.ipynb          # Interactive notebook with clean card splitter and student Q&A
-├── requirements.txt                # Python dependencies
-├── .env.example                    # API key template
-├── README.md                       # Setup guide
-└── sample_data/
-    ├── student_info_clean.txt      # 92 structured student profile cards
-    ├── student_info.txt            # Raw student submissions
-    └── rag_handbook.pdf            # Sample PDF documentation
+├── README.md                           # Main Project Overview
+├── .env.example                        # Root API Key Template
+├── .env                                # Local environment file
+├── AI Agents/                          # AI Agents Workshop & Labs
+└── RAG/                                # Retrieval-Augmented Generation Lab
+    ├── README.md                       # RAG Lab Detailed Instructions
+    ├── RAG_HandsOn_Lab.ipynb           # Interactive hands-on notebook
+    ├── requirements.txt                # Python dependencies
+    ├── .env.example                    # Local API Key template
+    ├── .env                            # Local environment file
+    └── sample_data/
+        ├── student_info_clean.txt      # 92 structured student profile cards
+        ├── student_info.txt            # Raw student submissions
+        └── rag_handbook.pdf            # Sample PDF documentation
 ```

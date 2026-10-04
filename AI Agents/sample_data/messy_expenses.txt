@@ -1,0 +1,34 @@
+# Sample Chaotic Emails and Expense Strings for Lab 1 (The Expense Parser)
+
+--- EMAIL 1: Chaotic Travel Receipt ---
+Hey Team,
+Just submitting my travel expenses from yesterday's client visit in SF.
+Grabbed breakfast and a latte for $14.50 at Blue Bottle Coffee around 8 AM.
+Then took an Uber from SFO to Downtown which was $48.20.
+Had lunch with the client at Chipotle ($36.80 for both of us).
+Later I took an afternoon Lyft back to the airport for $52.10 and picked up a sandwich at Peet's Coffee for $11.25.
+Please approve!
+Cheers,
+Alex
+
+--- EMAIL 2: Office Supplies & Subscriptions ---
+Invoice Summary:
+Hey Finance, here are the software and hardware renewals for our engineering pod:
+- GitHub Enterprise annual seat: $252.00 on Visa ****4121
+- AWS Cloud hosting charges: $1420.50
+- Bought 2 ergonomic mouse pads from Amazon for $28.99
+- Team Figma organization license renewal: $180.00
+- Also bought snacks for the hackathon at Whole Foods for $67.45
+Thanks, Sarah
+
+--- EMAIL 3: Casual Slack Message ---
+yo, quick update on expenses for yesterday:
+Bought a coffee for 4.50 at Starbucks yesterday, and spent $50 on gas at Shell. Also grabbed a quick burger at In-N-Out for 12.75 and bought $18.30 parking ticket at CityGarage.
+
+--- EMAIL 4: Tricky / Mixed Currency & Ambiguous Text ---
+Expense Log:
+1. Dinner at Trattoria Roma: $85.00 (Food)
+2. Metro card recharge at MTA: 33.00 USD
+3. Software subscription to JetBrains: $199.00
+4. Office whiteboard markers from Staples: 15.49
+5. We also looked at buying a new monitor for $450 but decided not to purchase it yet. (DO NOT COUNT THIS)

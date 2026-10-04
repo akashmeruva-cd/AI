@@ -1,57 +1,45 @@
-# 🎓 60-Minute Hands-on RAG Lab (Student Directory & Custom Documents)
+# 🧠 Applied AI Curriculum & Practical Labs
+> **Open Source Development Program**
 
-Welcome to the **Retrieval-Augmented Generation (RAG) Practical Lab**. This repository contains an interactive hands-on lab where students build a production RAG pipeline to query a live, structured student directory (`sample_data/student_info_clean.txt`) and custom documents.
+Welcome to the **Applied AI & Systems Engineering** repository. This workspace contains comprehensive, production-ready hands-on labs and workshops designed for software engineers.
 
 ---
 
-## 🚀 Quick Start for Students
+## 📚 Workshops & Practical Labs
 
-### 1. Open Directory & Install Dependencies
-```bash
-cd AI/RAG
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
+| Track | Topic | Overview | Lab Notebook & Code |
+| :--- | :--- | :--- | :--- |
+| **Session 21** | **Retrieval-Augmented Generation (RAG)** | Document chunking, vector embeddings, ChromaDB indexing, and student directory Q&A | [`RAG/`](file:///Users/akash.meruva/Documents/Projects-cd/AI/RAG/README.md) |
+| **Session 22** | **Programmable AI & AI Agents** | Structured Outputs (Pydantic), The ReAct Loop (`Thought $\rightarrow$ Action $\rightarrow$ Observation`), Tools & Multi-Agent systems | [`AI Agents/`](file:///Users/akash.meruva/Documents/Projects-cd/AI/AI%20Agents/README.md) |
 
-### 2. Configure API Key
-Create a `.env` file or enter your key interactively inside the notebook:
+---
+
+## 🚀 Quick Start
+
+### 1. Configure Global Environment
+Create a `.env` in the root (or inside either lab directory):
 ```bash
 cp .env.example .env
-# Add GOOGLE_API_KEY (from https://aistudio.google.com/), GROQ_API_KEY, or OPENAI_API_KEY
+# Set GOOGLE_API_KEY, OPENAI_API_KEY, or GROQ_API_KEY
 ```
 
-### 3. Launch the Lab Notebook
+### 2. Run Session 22: AI Agents Lab
 ```bash
+cd "AI Agents"
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+jupyter notebook AI_Agents_HandsOn_Lab.ipynb
+```
+
+### 3. Run Session 21: RAG Lab
+```bash
+cd "RAG"
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 jupyter notebook RAG_HandsOn_Lab.ipynb
 ```
-
----
-
-## ✂️ Text Splitter Strategy for `student_info_clean.txt`
-
-Each profile card is enclosed in `==================================================` delimiters. We configure `RecursiveCharacterTextSplitter` as:
-
-```python
-text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=350,
-    chunk_overlap=0,
-    separators=["==================================================", "\n\n"]
-)
-```
-
-This guarantees that **each chunk is exactly 1 complete student profile** with zero boundary fragmentation!
-
----
-
-## 📊 Sample Student Queries in the Lab
-
-Once indexed in ChromaDB, students can run questions like:
-- **Roll Number Lookup**: *"What is the roll number of student Anuj?"*
-- **README / GitHub Lookup**: *"I want to know the readme file of student Mayank"*
-- **Campus & Section**: *"I want to know the campus details and section of Nikhil Kumar"*
-- **Full Profile Query**: *"What is the roll number, campus, section, and readme URL of Shreyansh Singh?"*
-- **Guardrail / Anti-Hallucination**: *"What is the roll number of Harry Potter at Hogwarts?"*
 
 ---
 
@@ -59,12 +47,22 @@ Once indexed in ChromaDB, students can run questions like:
 
 ```
 AI/
-├── README.md                           # Main Project Overview
+├── README.md                           # Main Curriculum Overview
 ├── .env.example                        # Root API Key Template
 ├── .env                                # Local environment file
-├── AI Agents/                          # AI Agents Workshop & Labs
-└── RAG/                                # Retrieval-Augmented Generation Lab
-    ├── README.md                       # RAG Lab Detailed Instructions
+├── AI Agents/                          # Session 22: Programmable AI & AI Agents
+│   ├── README.md                       # AI Agents Lab Guide & Architecture
+│   ├── AI_Agents_HandsOn_Lab.ipynb     # Interactive Jupyter Notebook (7 Modules)
+│   ├── lab1_expense_parser.py          # Lab 1: Pydantic Structured Output Parser
+│   ├── lab2_market_agent.py            # Lab 2: ReAct Financial Intelligence Agent
+│   ├── lab3_multi_agent_system.py      # Lab 3: Multi-Agent Handoff Pipeline
+│   ├── requirements.txt                # Python dependencies
+│   ├── .env.example                    # Local API Key template
+│   └── sample_data/
+│       ├── messy_expenses.txt          # Raw receipt and email test cases
+│       └── market_test_prompts.txt     # Market & math queries
+└── RAG/                                # Session 21: Retrieval-Augmented Generation
+    ├── README.md                       # RAG Lab Guide
     ├── RAG_HandsOn_Lab.ipynb           # Interactive hands-on notebook
     ├── requirements.txt                # Python dependencies
     ├── .env.example                    # Local API Key template
@@ -74,3 +72,4 @@ AI/
         ├── student_info.txt            # Raw student submissions
         └── rag_handbook.pdf            # Sample PDF documentation
 ```
+

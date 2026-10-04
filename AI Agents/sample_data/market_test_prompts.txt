@@ -1,0 +1,16 @@
+# Sample Market & Math Queries for Lab 2 (The Market Agent)
+
+Query 1 (Single Stock Math):
+"How much would it cost to buy 15 shares of Microsoft (MSFT) at the current market price?"
+
+Query 2 (Comparative Analysis & Allocation):
+"What is the current stock price of Apple (AAPL) and NVIDIA (NVDA)? If I have a budget of $5,000, how many whole shares of Apple can I purchase?"
+
+Query 3 (Multi-step Arithmetic with Tax / Fees):
+"Calculate the total cost of purchasing 10 shares of Tesla (TSLA) and 20 shares of Google (GOOGL), plus a flat trading commission fee of $15.50 and a 2% brokerage tax."
+
+Query 4 (Market Research & Catalyst Search):
+"Find the current price of Amazon (AMZN), look up the recent quarterly revenue headlines, and calculate how much a 10% increase in today's price would be."
+
+Query 5 (Portfolio Rebalancing Calculation):
+"I currently own 50 shares of MSFT and 30 shares of AAPL. What is the total current value of my combined tech portfolio?"
